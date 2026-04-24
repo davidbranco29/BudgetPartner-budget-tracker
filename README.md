@@ -23,6 +23,4 @@ A web-based budget tracking application that allows users to manage income, expe
 2. Filter and search transactions
 3. View reports and summaries
 
-## Live Demo
 
-(put your GitHub Pages link here)
