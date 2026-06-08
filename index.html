@@ -47,8 +47,15 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
     .app-shell {
-      width: 94%;
+      width: 100%;
       max-width: 1200px;
       margin: 28px auto;
     }
@@ -412,7 +419,7 @@
 
     @media (max-width: 560px) {
       .app-shell {
-        width: 96%;
+        width: 100%;
         margin: 16px auto;
       }
 
@@ -461,10 +468,34 @@
         font-size: 11px;
       }
     }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px;
+      }
+
+      .container {
+        width: 100%;
+        padding: 16px;
+      }
+
+      input,
+      button,
+      select {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <main class="app-shell">
+  <div class="container">
+    <main class="app-shell">
     <section class="hero">
       <div>
         <h1>Budget Partner</h1>
@@ -606,6 +637,7 @@
       </div>
     </section>
   </main>
+  </div>
 
   <script>
     const incomeCategories = ["Sales", "Client Payment", "Service Income", "Refund", "Other Income"];
@@ -887,4 +919,3 @@
   </script>
 </body>
 </html>
-
